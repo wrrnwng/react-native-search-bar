@@ -53,6 +53,10 @@
                           };
   
   [_eventDispatcher sendInputEventWithName:@"press" body:event];
+
+  self.text = @"";
+  [self resignFirstResponder];
+  [self setShowsCancelButton:NO animated:YES];
 }
 
 
